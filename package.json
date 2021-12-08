@@ -1,0 +1,19 @@
+{
+  "name": "cypress-api-test",
+  "version": "1.0.0",
+  "description": "example of API testing using Cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open:ff": "./node_modules/.bin/cypress open --browser firefox",
+    "cypress:open:chromium": "./node_modules/.bin/cypress open --browser chromium"
+  },
+  "author": "Kevork",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.1.1"
+  },
+  "dependencies": {
+    "typescript": "^4.5.2"
+  }
+}
