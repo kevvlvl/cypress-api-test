@@ -19,4 +19,21 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+
+    on('before:browser:launch', (browser = {}, launchOptions) => {
+
+        console.log("EVENT before:browser:launch - browser is family = ", browser.family, ", name = ", browser.name)
+
+        if(browser.family === 'chromium' && browser.name !== 'electron') {
+
+            // Here we can customize browser configurations at launch
+            // launchOptions.args.push('--enable-features=VaapiVideoDecoder')
+
+        }
+
+        console.log("Arguments ", launchOptions.args)
+
+        return launchOptions
+    })
+
 }
