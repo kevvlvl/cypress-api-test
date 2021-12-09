@@ -1,8 +1,6 @@
 # API Testing using the Cypress Framework
 
-Here, we're testing the free Alpha Vantage finance API
-
-API Key: LHTLNAW45BR8C7F8
+Here, we're testing the free Alpha Vantage finance API to query for some stock data and assert on various things such as response code and body.
 
 ## Show Cypress Info
 
